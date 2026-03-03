@@ -34,7 +34,7 @@ def main():
                     words.setdefault(word, []).append(line_number)
                     words_seen_this_line.add(word)
 
-    print("\nIndex:\n")
+    print("Index:")
     for word in sorted(words):
         print(f"{word}: {sorted(words[word])}")
 
